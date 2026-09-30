@@ -1,54 +1,60 @@
 <!-- #region -->
-# CS 5/7320 Artificial Intelligence
-
-<img src="http://aima.cs.berkeley.edu/cover2.jpg" align="right" width="25%">
-
-
-Assignments and examples for the course in CS 5/7320 Artificial Intelligence taught at the 
-[Computer Science Department at SMU](https://www.smu.edu/Lyle/Academics/Departments/CS) by [Michael Hahsler](https://michael.hahsler.net/). Slides and more information for students taking the course can be found on 
-[SMU's Canvas](https://www.smu.edu/OIT/Services/Canvas).
+# Artificial Intelligence - Lecture Material, Simple Python Code Examples and Exercises
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY_SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 
-The code examples follow the textbook [Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/) by Russell and Norvig. The code in this repository is intended to be simple to focus more on the basic AI concepts and less on the use of advanced implementation techniques (e.g., object-oriented design).
+<img src="assets/cover2.jpg" align="right">
+
+
+This repository contains lecture material, simple Python code examples, and programming exercises for the course
+CS 5/7320 Artificial Intelligence taught 
+by [Michael Hahsler](https://michael.hahsler.net/) 
+at the 
+[Department of Computer Science at SMU](https://www.smu.edu/lyle/departments/cs). 
+
+The code examples cover several chapters of the textbook [Artificial Intelligence: A Modern Approach (AIMA)](http://aima.cs.berkeley.edu/) by Russell and Norvig. The code in this repository is intended to be simple to focus more on the basic AI concepts and less on the use of advanced implementation techniques (e.g., object-oriented design and flexibility).
 More complex code examples accompanying the textbook can be found at the [GitHub repository aimacode](https://github.com/aimacode).  
 
-## Covered Chapters
+## Prerequisites 
 
-* Chapter 2: [Intelligent Agents](Agents) 
-* Chapter 3: [Solving Problems by Search](Search)
-* Chapter 4: Search in Complex Environments: [Local Search,](Local_Search) [Nondeterministic Actions](Games)
-* Chapter 5: [Adversarial Search and Games](Games)
-* Chapter 6: [Constraint Satisfaction Problem](CSP)
-* Chapters 12-13: [Uncertainty and Probabilistic Reasoning](Uncertainty)
-* Chapter 19: [Learning from Examples (Machine Learning)](ML)
+Studying the material requires:
+* Python programming skills
+* Practical knowledge of how to implement data structures (Big-O notation, search trees)
+* Knowledge of probability theory and combinatorics basics
 
-## Installing Python and Jupyter Notebook
+See [HOWTO: Cover the Course Prerequisites](HOWTOs/prereqs.md) if you need to review any of these topics.
 
-To install Python and Jupyter Notebook on your system, you can 
-* __[prefered solution]__ install [Docker](https://docs.docker.com/get-docker/) and 
-execute `docker run -p 8888:8888 jupyter/datascience-notebook` to download and create a running container of
-the [jupyter/datascience-notebook](https://hub.docker.com/r/jupyter/datascience-notebook) image. 
-From now on, use `docker ps -a` to list containers and their container id, `docker stop <container id>` and `docker start <container id>` to stop and start the container
-(do not use `run` again because it will create a new container), or 
-* install Python, Jupyter Notebook and the needed packages (e.g., via [Anaconda](https://www.anaconda.com/)), or
-* use a service like the [Google Colab](https://colab.research.google.com/github/mhahsler/CS7320-AI/blob/master/) environment (there are some limitations and you will have to copy some needed files to Google Drive). 
+## Covered AIMA Chapters
 
-## Learning Python and Jupyer Notebook
+| Module | Chapter | Lecture Slides | Code |
+| :----- | :------ | :------------: | :--: |
+| 1 | 1: Introduction to AI (+ 27 Ethics and Safety) | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/01_intro.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/01_intro.pptx) | - | 
+| 2 | 2: Intelligent Agents | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/02_agents.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/02_agents.pptx) | [Code](Agents) | 
+| 3 | 3: Solving Problems by Search | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/03_search.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/03_search.pptx) | [Code](Search) |
+| 4 |4.1-4.2: Search in Complex Environments: Local Search | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/04_local_search.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/04_local_search.pptx) | [Code](Local_Search) |
+| 5 | 4.3-4.5: Search in Complex Environments: Search with Uncertainty | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/04_search_with_uncertainty.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/04_search_with_uncertainty.pptx) | [Code](Search_with_Uncertainty) |
+| 6 | 5: Adversarial Search and Games | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/05_games.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/05_games.pptx) | [Code](Games) |
+| 7 | 6: Constraint Satisfaction Problem | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/06_CSP.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/06_CSP.pptx) | [Code](CSP) |
+| 8 | 7-10: Knowledge-Based Agents + LLMs and Agentic AI | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/07_knowledge-based.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/07_knowledge-based.pptx) | [Code](Knowledge-based) |
+| 9 | 11: Automated Planning: Hierarchical Planning and Monitoring | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/11_Automated_Planning.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/11_Automated_Planning.pptx) | - |
+| 10 | 12: Quantifying Uncertainty: Bayesian Decision-Making | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/12_uncertainty.pdf),[PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/12_uncertainty.pptx) | [Code](Uncertainty) |
+| 11 | 13: Probabilistic Reasoning: Bayesian Networks | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/13_bayes_nets.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/13_bayes_nets.pptx) | [Code](Probabilistic_Reasoning) |
+| 12 | 16: Making Simple Decisions: Decision Networks | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/16_decision_making.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/16_decision_making.pptx) | - |
+| 13 | 19-21: Machine Learning: Learning from Examples | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/19_ML_intro.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/19_ML_intro.pptx) | [Code](ML) |
+| - | 22+17: Reinforcement Learning and MDPs | [PDF](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/22_Reinforcement_Learning.pdf), [PowerPoint](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/slides/22_Reinforcement_Learning.pptx) | [Code](RL) |
 
-If you are not familiar with Python then you should work through a tutorial like [this](https://www.w3schools.com/python/default.asp) to learn the basics about Python and the packages `numpy` and `pandas`. Another good source to learn Python are 
-the notebooks [intro to Python](https://github.com/eclarson/MachineLearningNotebooks/blob/master/0.%20Python_Intro%20(optional).ipynb)
-and [intro to numpy and pandas](https://github.com/eclarson/MachineLearningNotebooks/blob/master/01_Numpy%20and%20Pandas%20Intro.ipynb)
-by Eric Larson. Some code examples that help with the assignments are available [here](Python_Code_Examples).
+![Chatbot](assets/chatbot.png) [Ask the AIMA Scholar (GPT)](https://chatgpt.com/g/g-pNvaqyjSZ-aima-scholar) a question about the content of the textbook.
 
-How to use Jupyter Notebook is covered in many online tutorials like the [Jupyer Notebook tutorial](https://www.dataquest.io/blog/jupyter-notebook-tutorial/).
+## HOWTOs
 
-## Working on Assignments
+* [HOWTO install and use Python and Jupyter Notebooks](HOWTOs/tools.md)
+* [HOWTO work on assignments](HOWTOs/working_on_assignments.md)
+* [HOWTOs for AI with Python with code examples](HOWTOs)
 
-You can fork this repository to work on your solutions locally. 
-Submit a pdf of the compiled notebook (either export the notebook as pdf or print to pdf). The notebook needs to be a complete project report with documentation (including your design choices), code and results (e.g., tables with simulation results) with a short discussion of what they mean. Use the provided notebook cells and insert additional code and markdown cells as needed.
 
 ## License
-All code and documents in this repository are provided under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/)
+&copy; 2025 [Michael Hahsler](https://michael.hahsler.net). 
+All code and documents in this repository are provided under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
 <!-- #endregion -->

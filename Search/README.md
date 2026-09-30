@@ -1,19 +1,27 @@
 <!-- #region -->
-# Problem Solving by Search
-
-## Contents
-
-* Assignment: [Solving a maze using a goal-based Agent](Maze.ipynb)
-* Example: [Exploring heuristic values for an empty maze](Explore_heuristics.ipynb) (needs R)
+# Chapter 3: Problem Solving by Search
 
 
+## HOWTO
+* [HOWTO: Simple Trees used for Search-based AI in Python](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/HOWTOs/trees.ipynb)
+
+## Comparisons
+* [Mazes: Compare the searched state space for different algorithms (L Maze)](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Maze_Example.ipynb).
+* [Mazes: Compare the detailed search behavior of BFS, DFS, and A* search with animations (Medium Maze)](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Maze_Example_Animation.ipynb).
+* [Mazes: Compare BFS with A-Star Search with animations (L Maze)](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Maze_BFS_vs_A_Star.ipynb).
+* [Mazes: Compare Issues with DFS Cycle Checking (Open Maze)](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Maze_Example-Animation_Cycle_checking.ipynb).
+
+## Heuristics
+* [Maze: The effect of different heuristics](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Explore_heuristics.ipynb)
+
+## Exercises
+* [Solve a maze using a goal-based planning Agent](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Maze.ipynb)
+* [A simplified exercise using only BFS](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Maze_simplified.ipynb)
+* [Mazes: Show all mazes for the assignment](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Search/Show_all_mazes.ipynb)
 
 ## License
-All code and documents in this repository is provided under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/)
+&copy; 2025-2026 [Michael Hahsler](https://michael.hahsler.net). 
+All code and documents in this repository are provided under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License.](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
 <!-- #endregion -->
-
-```python
-
-```

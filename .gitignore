@@ -1,0 +1,22 @@
+.vscode
+settings.json
+Gemfile
+Gemfile.lock
+_site/
+.jekyll-cache/
+
+__pycache__
+*_solution.*
+*-solution.*
+*_sol.*
+*-sol.*
+WORK_*
+
+.ipynb_checkpoints/
+~$*.pptx
+
+# source is in Games:
+RL/tictactoe.py
+
+*.html
+*.swp

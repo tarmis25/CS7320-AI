@@ -1,20 +1,38 @@
 <!-- #region -->
-# Adversarial Search and Games
+# Chapter 5: Adversarial Search and Games
 
-## Contents
+## Defining a Game
+* [Defining Tic-Tac-Toe](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/tictactoe_definitions.ipynb)
 
-### Solving games using nondeterministic actions
-* Example: [Solving Tic-Tac-Toe with And-Or-Tree Search](tictactoe_and_or_tree_search.ipynb)
+## Connection to Search with Nondeterministic Actions (from Chapter 4.3)
+* [Solving Tic-Tac-Toe with And-Or-Tree Search](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/tictactoe_and_or_tree_search.ipynb). Here, the opponent is seen as part of the environment: each action by the player is followed by an unknown action by the opponent, making the outcome nondeterministic from the player's viewpoint.
 
-### Solving games using adversarial search
-* Example: [Solving Tic-Tac-Toe with Minimax Search and Alpha-Beta Pruning](tictactoe_alpha_beta_tree_search.ipynb)
-* Example: [Solving Tic-Tac-Toe with Heuristic Alpha-Beta Tree Search](tictactoe_heuristic_alpha_beta_tree_search.ipynb)
-* Example: [Solving Tic-Tac-Toe with Pure Monte Carlo Search](tictactoe_pure_monte_carlo_search.ipynb)
+## Solving Games Using Adversarial Search
+* [Solving Tic-Tac-Toe with Minimax Search and Alpha-Beta Pruning](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/tictactoe_alpha_beta_tree_search.ipynb)
+* [Solving Tic-Tac-Toe with Heuristic Alpha-Beta Tree Search](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/tictactoe_heuristic_alpha_beta_tree_search.ipynb)
+* [Solving Tic-Tac-Toe with Pure Monte Carlo Search](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/tictactoe_pure_monte_carlo_search.ipynb)
+* [Solving Tic-Tac-Toe with Pure Monte Carlo Search + UCB1 Selection Policy](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/tictactoe_monte_carlo_tree_search_restricted.ipynb)
+
+## Interactive Game Play
+* [Play Tic-Tac-Toe Interactively (Simple Implementation)](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/tictactoe_interactive.ipynb)
 
 
+## Exercises
+* [Adversarial Search: Playing Connect 4](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/assignment_connect4.ipynb)
+* [Adversarial Search: Playing "Mean" Connect 4](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/assignment_mean_connect4.ipynb)
+* [Adversarial Search: Playing Dots and Boxes](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/Games/assignment_dots_and_boxes.ipynb)
+
+
+## Connection to Machine Learning (more in Chapter 19)
+* [Learn to Score a Tic-Tac-Toe Board by Example](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/ML/ML_for_tictactoe.ipynb) uses a neural network trained on self-play data to learn an evaluation function that can be used as a heuristic in Heuristic Minimax Search or as a playout policy for Monte Carlo Search.
+
+## Connection to Reinforcement Learning (more in Chapter 22)
+* [Model-free Reinforcement Learning to Play Tic-Tac-Toe with Q-Learning.](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/RL/tictactoe_QL.ipynb)
+* [Model-based Reinforcement Learning to Play Tic-Tac-Toe with Value Iteration.](https://colab.research.google.com/github/mhahsler/Introduction_to_Artificial_Intelligence/blob/master/RL/tictactoe_VI.ipynb)
 
 ## License
-All code and documents in this repository is provided under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/)
+&copy; 2025-2026 [Michael Hahsler](https://michael.hahsler.net). 
+All code and documents in this repository are provided under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
 <!-- #endregion -->
